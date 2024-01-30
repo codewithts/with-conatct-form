@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f1f4fd;
+}
+.container{
+    max-width: 1200px;
+    width: 95%;
+}
+.slide-wrapper .image-list{
+    display: grid;
+    gap: 18px;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(10, 1fr);
+}
+.slide-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+}
+.slide-wrapper .image-list .image-item{
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+}
